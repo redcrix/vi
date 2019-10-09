@@ -4251,33 +4251,31 @@ var AlertProvider = (function () {
         this.alertText = "Alert";
     }
     AlertProvider.prototype.show = function (text) {
-        var _this = this;
-        this.translate.get([text, "ok", "Alert"]).subscribe(function (res) {
-            var alert = _this.alertCtrl.create({
-                title: res["Alert"],
-                subTitle: res[text],
-                buttons: [res["ok"]]
-            });
-            alert.present();
-        });
+        // this.translate.get([text, "ok", "Alert"]).subscribe((res) => {
+        //   let alert = this.alertCtrl.create({
+        //     title: res["Alert"],
+        //     subTitle: res[text],
+        //     buttons: [res["ok"]]
+        //   });
+        //   alert.present();
+        // });
     };
     AlertProvider.prototype.showWithTitle = function (text, title) {
-        var _this = this;
-        this.translate.get([text, "ok", title]).subscribe(function (res) {
-            var alert = _this.alertCtrl.create({
-                title: res[title],
-                subTitle: res[text],
-                buttons: [res["ok"]]
-            });
-            alert.present();
-        });
+        // this.translate.get([text, "ok", title]).subscribe((res) => {
+        //   let alert = this.alertCtrl.create({
+        //     title: res[title],
+        //     subTitle: res[text],
+        //     buttons: [res["ok"]]
+        //   });
+        //   alert.present();
+        // });
     };
     AlertProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]) === "function" && _b || Object])
     ], AlertProvider);
     return AlertProvider;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=alert.js.map
