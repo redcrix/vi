@@ -1,0 +1,120 @@
+sliding-tabs {
+    .slides{
+        margin-top: 10px;
+        background-color: $white;
+		
+        .swiper-slide.swiper-slide-lg{
+            height: 65px;
+			
+            
+
+            h2{
+                margin-top: 0;
+                margin-bottom: 8px;
+                height:25px;
+                img{
+                    height:25px;
+                    width: 25px;
+                }
+            }
+            
+            
+            h3{
+                font-size: 12px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+        .swiper-slide{
+            height: 40px;
+            width: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+            border-top-width: 0;
+            border-left-width: 0;
+            border-right-width: 0;
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-color:transparent;
+            opacity: 0.50;
+        }
+        .selected{
+            border-bottom-color: $black;
+            color:color($colors, dark);
+            opacity: 1.00;            
+        }
+    }
+
+    .grid{
+        display: inline-block;
+
+        [col-6]{
+            float: left;
+        }
+    }
+}
+
+.pr-image-css{
+    display: -webkit-inline-box;
+    border-radius: 133px;
+    // border: solid #19a3dd;
+    background: white;
+    // height: 11pc;
+}
+
+.pr-grid-my{
+    text-align: -webkit-center;
+    background: white;
+    margin: 12px 0px;
+    padding: 22px 12px !important;
+}
+
+sliding-tabs .slides .swiper-slide{
+    height: unset;
+}
+.small-font{
+    text-align: center;
+}
+.pr-empty-class .slide-zoom {
+    text-align: center !important;
+}
+
+.pr-remove-extra .card .card-add-cart.row {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .pr-image-css{
+        display: -webkit-inline-box;
+        border-radius: 133px;
+        // border: solid #19a3dd;
+        background: white;
+        // height: 6pc;
+        
+    }  
+
+    .small-font{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .pr-image-css{
+        height: 39px;
+        width: 39px;
+        padding: 14px;
+    }
+}
+
+
+@media only screen and (max-width : 1030px){
+    .pr-image-css{
+        display: -webkit-inline-box;
+        border-radius: 133px;
+        // border: solid #19a3dd;
+        background: white;
+        // height: 5pc;
+    }  
+}
+

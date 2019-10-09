@@ -1,0 +1,92 @@
+
+
+<div *ngIf="type=='image'">
+
+  <ion-slides slidesPerView="auto" dir="{{shared.dir}}" id="slides">
+    <ion-slide class="swiper-slide-lg" [class.selected]="selected==''" *ngIf="shared.allCategories!=null" (click)="changeTab('')">
+      <h2 style="padding-top:2px; padding-bottom:2px;"><img src="assets/home-page/category.png"></h2>
+      <h3>{{'All'|translate}}</h3>
+    </ion-slide>
+    <ion-slide class="swiper-slide-lg" [class.selected]="selected==c.id" *ngFor="let c of shared.allCategories" (click)="changeTab(c)">
+      <h2>
+        <img *ngIf="c.image" src="{{c.image.src}}">
+      </h2>
+      <h3>{{c.name}}</h3>
+    </ion-slide>
+  </ion-slides>
+
+</div>
+
+  <!-- <ion-slides slidesPerView="auto" dir="{{shared.dir}}">
+    <ion-slide [class.selected]="selected==''" *ngIf="shared.allCategories!=null" (click)="changeTab('')">
+      {{'All'|translate}}
+    </ion-slide>
+    <ion-slide [class.selected]="selected==c.id" *ngFor="let c of shared.allCategories" (click)="changeTab(c)">
+      {{c.name}}
+    </ion-slide>
+  </ion-slides> -->
+<!-- 
+  <ion-slides slidesPerView="auto" dir="{{shared.dir}}">
+    <ion-slide [class.selected]="selected==''" *ngIf="shared.allCategories!=null" (click)="changeTab('')">
+      {{'All'|translate}}
+    </ion-slide>
+    <ion-slide [class.selected]="selected==c.id" *ngFor="let c of shared.allCategories" (click)="changeTab(c)">
+      {{c.name}}
+    </ion-slide>
+  </ion-slides> -->
+
+  <!-- Categories Viewed -->
+  <div class="module">
+      <ion-slides slidesPerView=3 spaceBetween=0 dir="{{shared.dir}}">
+          <!-- <ion-slide *ngFor="let c of shared.categories; let i = index;" class="pr-empty-class" (click)="openSubCategories(c.id)" style="opacity: 1"> -->
+        <ion-slide *ngFor="let c of shared.categories; let i = index;" class="pr-empty-class" style="opacity: 1">
+            <ion-thumbnail style="display: -webkit-inline-box">
+                <img src="{{image[i]}}" class="pr-image-css">
+              </ion-thumbnail>
+              <div class="categories-title small-font">{{c.name}}</div>
+              <!-- <div class="categories-subtitle small-font">{{c.count}} {{'Products'| translate }} </div> -->
+        </ion-slide>
+        <ion-slide class="swiper-slide-last"></ion-slide>
+      </ion-slides>
+    </div>
+
+
+
+      <!-- <ion-slides>
+        <ion-slide col-4 *ngFor="let c of shared.categories" (click)="openSubCategories(c.id)" style="height: auto;" class="animated fadeIn">
+          <div class="category-icon"><img *ngIf="c.image" src="{{c.image.src}}" /></div>
+          <div class="cateogry-content">
+            <div class="categories-title">{{c.name}}</div>
+            <div class="categories-subtitle">{{c.count}} {{'Products'| translate }} </div>
+          </div>
+        </ion-slide>
+      </ion-slides> -->
+
+
+
+  <!-- Recent Viewed items products -->
+  <div class="module recent-module" *ngIf="shared.recentViewedProducts.length!=0" [@animate]>
+      <h5>{{'Recently Viewed'|translate}}</h5>
+      <ion-slides slidesPerView=2 spaceBetween=0 dir="{{shared.dir}}" style="background: none;">
+        <ion-slide *ngFor="let p of shared.recentViewedProducts" style="opacity: 1" [@animate]>
+          <product [data]="p" [type]="'recent'" class="pr-remove-extra"></product>
+        </ion-slide>
+        <ion-slide class="swiper-slide-last"></ion-slide>
+      </ion-slides>
+    </div>
+
+
+
+<ion-grid>
+  <ion-col *ngFor="let p of products" col-6>
+    <product [data]="p" [type]="'normal'"></product>
+  </ion-col>
+
+  <ion-col *ngIf="products.length==0 && !loadingServerData" col-12 class="animated fadeIn">
+    <h6 text-center>{{'No Products Found!'|translate}}</h6>
+  </ion-col>
+</ion-grid>
+
+<ion-infinite-scroll #infinite (ionInfinite)="getProducts($event)">
+  <ion-infinite-scroll-content></ion-infinite-scroll-content>
+</ion-infinite-scroll>
