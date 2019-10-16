@@ -51515,26 +51515,6 @@ image-viewer.ion-page img {
   background: #2e3033;
 }
 
-.side-menu .list-avatar .item {
-  background-color: #b0589f !important;
-}
-
-footer .toolbar .segment .segment-button.segment-activated {
-  color: #b0589f !important;
-}
-
-.button-md-secondary {
-  background: #b0589f !important;
-}
-
-page-settings .page-settings .list-avatar {
-  background-color: #b0589f !important;
-}
-
-.slides .swiper-pagination-bullet-active {
-  background: #b0589f !important;
-}
-
 .toolbar .bar-buttons .cart-button .icon .badge {
   background-color: #f9ba00 !important;
 }
@@ -51646,7 +51626,6 @@ page-product-detail .product-detail-title .product-tags .product-tag-off {
 
 .side-menu .list-avatar .item:after {
   content: "";
-  background: url(../assets/icons_stripe.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -51855,6 +51834,10 @@ html[dir="rtl"] page-reviews .rating-page .rating-users .item .product-rating li
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.side-menu .list-avatar .item {
+  background-color: #51688F !important;
 }
 
 .slides {
@@ -55589,7 +55572,6 @@ page-settings .page-settings .list .button {
 
 page-settings .page-settings .list-avatar:before {
   content: "";
-  background-image: url(../assets/icons_stripe.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55669,6 +55651,10 @@ page-settings .page-settings .list-avatar .item p {
   font-size: 14px;
   margin-top: 5px;
   margin-bottom: 15px;
+}
+
+.list-avatar {
+  background: #51688F !important;
 }
 
 page-shipping-method .row .col {

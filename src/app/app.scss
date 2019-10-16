@@ -20,28 +20,13 @@
     background: #2e3033;
 }
 
-.side-menu .list-avatar .item {
-    background-color: #b0589f !important;
-}
-
-footer .toolbar .segment .segment-button.segment-activated {
-    color: #b0589f !important;
-}
-
-.button-md-secondary {
-    background: #b0589f !important;
-}
-
-page-settings .page-settings .list-avatar {
-    background-color: #b0589f !important;
-
-}
 
 
 
-.slides .swiper-pagination-bullet-active {
-    background: #b0589f !important;
-}
+
+
+
+
 
 .toolbar .bar-buttons .cart-button .icon .badge {
     background-color: rgb(249, 186, 0) !important;
@@ -188,7 +173,6 @@ page-product-detail .product-detail-title .product-tags .product-tag-off {
         margin-bottom: 0;
         .item:after {
             content: "";
-            background: url(../assets/icons_stripe.svg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -393,3 +377,7 @@ html[dir="rtl"]{
     background-size: cover;
     background-position: center;
   }
+
+  .side-menu .list-avatar .item {
+    background-color: #51688F !important;
+}

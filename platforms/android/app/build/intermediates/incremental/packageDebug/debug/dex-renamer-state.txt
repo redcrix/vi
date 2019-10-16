@@ -1,4 +1,4 @@
-#Sun Aug 11 02:15:39 IST 2019
-base.0=/Users/shubamverma/Downloads/CleanEver Ionic Woocommerce/cleanever-Ionic-Woocommerce/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Sun Oct 13 15:25:09 IST 2019
+base.0=/Users/shubamverma/Desktop/HEROKU/6HRS/vi/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
 renamed.0=classes.dex
-file.0=/Users/shubamverma/Downloads/CleanEver Ionic Woocommerce/cleanever-Ionic-Woocommerce/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex
+file.0=/Users/shubamverma/Desktop/HEROKU/6HRS/vi/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

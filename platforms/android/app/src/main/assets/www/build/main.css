@@ -51515,26 +51515,6 @@ image-viewer.ion-page img {
   background: #2e3033;
 }
 
-.side-menu .list-avatar .item {
-  background-color: #b0589f !important;
-}
-
-footer .toolbar .segment .segment-button.segment-activated {
-  color: #b0589f !important;
-}
-
-.button-md-secondary {
-  background: #b0589f !important;
-}
-
-page-settings .page-settings .list-avatar {
-  background-color: #b0589f !important;
-}
-
-.slides .swiper-pagination-bullet-active {
-  background: #b0589f !important;
-}
-
 .toolbar .bar-buttons .cart-button .icon .badge {
   background-color: #f9ba00 !important;
 }
@@ -51646,7 +51626,6 @@ page-product-detail .product-detail-title .product-tags .product-tag-off {
 
 .side-menu .list-avatar .item:after {
   content: "";
-  background: url(../assets/icons_stripe.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -51850,6 +51829,17 @@ html[dir="rtl"] page-reviews .rating-page .rating-users .item .product-rating li
   vertical-align: middle;
 }
 
+.side-menu-background {
+  background-image: url("../assets/laundry-cleaning.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.side-menu .list-avatar .item {
+  background-color: #51688F !important;
+}
+
 .slides {
   height: auto;
 }
@@ -52048,6 +52038,20 @@ footer .toolbar .segment .segment-button .icon img {
 
 footer .toolbar .segment .segment-button.segment-activated {
   color: #557f5f;
+}
+
+.toolbar-md-light .toolbar-background-md {
+  background: #169fe3 !important;
+}
+
+footer .toolbar .segment .segment-button.segment-activated {
+  color: #383838 !important;
+}
+
+footer .toolbar .segment .segment-button {
+  border-bottom-color: transparent;
+  overflow: visible;
+  color: white;
 }
 
 product .list-price-normal-through {
@@ -52486,6 +52490,15 @@ product .card .card-thumb {
   background-color: unset !important;
 }
 
+.button-md-secondary {
+  background: #0179b5 !important;
+}
+
+product .card .card-content .card-attr .col .icon {
+  font-size: 22px;
+  color: #fd0000;
+}
+
 scrolling-featured-products .grid {
   display: inline-block;
 }
@@ -52835,6 +52848,10 @@ page-categories .grid .col .card .cateogry-content .categories-subtitle {
   color: #747474;
 }
 
+page-categories .my-image-size {
+  height: 80px;
+}
+
 page-categories2 .page-categories2 .list .item {
   background-color: #ffffff;
 }
@@ -53012,6 +53029,10 @@ page-sub-categories .grid .col .cateogry-content .categories-title {
 page-sub-categories .grid .col .cateogry-content .categories-subtitle {
   font-size: 0.8em;
   color: #747474;
+}
+
+.my-image-size {
+  height: 80px;
 }
 
 page-sub-categories2 .list .item {
@@ -53275,6 +53296,20 @@ page-home .page-home .module h5 {
 page-home .animate-product {
   -webkit-animation: bounceInRight 0.75s;
   animation: bounceInRight 0.75s;
+}
+
+.side-menu .list-menu .item {
+  border-bottom: 1px solid #dedede;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.pr-new-logo-size {
+  width: 88px !important;
+}
+
+.toolbar-background-md {
+  border-color: #b2b2b2;
+  background: #169fe3;
 }
 
 page-home10 .moduletop h3 {
@@ -54022,6 +54057,10 @@ page-login .footer .button {
 
 page-login .button {
   height: 40px;
+}
+
+.pr-my-logo {
+  border-radius: unset !important;
 }
 
 page-my-account .page-my-account .photo {
@@ -55124,6 +55163,14 @@ page-product-detail .animate {
   animation: bounceInRight 0.75s;
 }
 
+.slide-zoom {
+  background: white;
+}
+
+.my-whatsApp-color {
+  background: #1be675;
+}
+
 page-products h5 {
   margin: 0px 10px;
   text-transform: uppercase;
@@ -55525,7 +55572,6 @@ page-settings .page-settings .list .button {
 
 page-settings .page-settings .list-avatar:before {
   content: "";
-  background-image: url(../assets/icons_stripe.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55605,6 +55651,10 @@ page-settings .page-settings .list-avatar .item p {
   font-size: 14px;
   margin-top: 5px;
   margin-bottom: 15px;
+}
+
+.list-avatar {
+  background: #51688F !important;
 }
 
 page-shipping-method .row .col {
@@ -55692,6 +55742,16 @@ page-sign-up .page-sign-up p {
 
 page-sign-up .red-color {
   color: red;
+}
+
+.pr-my-photo {
+  width: 146px !important;
+}
+
+.pr-my-fr {
+  width: unset !important;
+  height: unset !important;
+  border-radius: unset !important;
 }
 
 page-store .list {
